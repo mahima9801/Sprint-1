@@ -1,7 +1,7 @@
 package exception;
 
 public class NoDataFoundException extends Exception{
-	public NoDataFoundException(String str){
+	public NoDataFoundException(){
 		super();
 	}
 

@@ -11,7 +11,8 @@ import status.UpdateProd_Status;
 public class Main {
 	public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
-	System.out.println("Choose from the following:\n1.Raw Material Id\n2.Product Order Id");
+	control:while(true) {
+	System.out.println("Choose from the following:\n1.Raw Material Id\n2.Product Order Id\n3.Exit");
 	int ch = sc.nextInt();
 	switch(ch){
 	case 1:
@@ -28,7 +29,7 @@ public class Main {
 				}
 
 		}catch(NoDataFoundException e){
-			System.out.println(e);
+			System.out.println("order id doesn't exist");
 		}
 	}
 		System.out.println("Enter the updated place:");
@@ -59,7 +60,7 @@ public class Main {
 				}
 
 		}catch(NoDataFoundException e){
-			System.out.println(e);
+			System.out.println("order id doesn't exist");
 		}
 		}
 		System.out.println("Enter the updated place:");
@@ -78,11 +79,11 @@ public class Main {
 				break;
 			}
 			}
-		
+	case 3:break control;	
 	default:
 		System.out.println("Please select from the above list!");
 	}
-	sc.close();
+	}
 	}
 }
 

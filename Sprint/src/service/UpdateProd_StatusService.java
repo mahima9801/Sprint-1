@@ -32,7 +32,7 @@ UpdateProd_Status ups = new UpdateProd_Status();
 			return check;
 		}
 		else{
-			throw new NoDataFoundException("OrderId doesn't exist!");
+			throw new NoDataFoundException();
 		}
 		
 		

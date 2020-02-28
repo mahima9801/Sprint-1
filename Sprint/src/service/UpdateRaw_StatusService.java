@@ -32,7 +32,7 @@ public class UpdateRaw_StatusService {
 			return check;
 		}
 		else{
-			throw new NoDataFoundException("Not valid id\nPlease enter Id from the list!");
+			throw new NoDataFoundException();
 		}
 		
 		
